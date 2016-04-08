@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.planout" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <permission
+        android:name="com.javapapers.currentlocationinmap.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.javapapers.currentlocationinmap.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:screenOrientation="portrait"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDIcmd7RGZOQilbLknSbgPTIcPftaheU-E" />
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <fragment
+            android:name=".activities.HomeFragment"
+            android:label="@string/title_activity_home" >
+        </fragment>
+        <activity
+            android:name=".activities.CategoryActivity"
+            android:label="@string/title_activity_category"
+            android:parentActivityName="com.android.planout.activities.HomeActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.planout.activities.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activities.PlansCategoryActivity"
+            android:parentActivityName="com.android.planout.activities.CategoryActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.planout.activities.CategoryActivity" />
+        </activity>
+        <activity
+            android:name=".activities.PlanActivity">
+        </activity>
+        <activity
+            android:name=".activities.PostPlanActivity"
+            android:label="@string/title_activity_post_plan"
+            android:parentActivityName="com.android.planout.activities.HomeActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.planout.activities.HomeActivity" />
+        </activity>
+        <fragment
+            android:name=".activities.SubscribedFragment"
+            android:label="@string/title_activity_subscribed" >
+        </fragment>
+        <fragment
+            android:name=".activities.HostPlansFragment"
+            android:label="@string/title_activity_host_plans" >
+        </fragment>
+    </application>
+
+</manifest>

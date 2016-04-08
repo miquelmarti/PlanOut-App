@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/host_fragment"
+    tools:context="com.android.planout.activities.HostPlansFragment">
+
+    <TextView
+        android:id="@+id/host_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:text="You have not created any plan yet!\nCreate a plan now and let's have fun!"/>
+
+    <ListView
+        android:id="@+id/hostplans_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Plan Out!</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_category">Categories</string>
+    <string name="title_activity_plans_category">Plans</string>
+    <string name="title_activity_plan">PlanActivity</string>
+    <string name="title_activity_post_plan">Post a Plan!</string>
+    <string name="title_activity_home">Plan Out!</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_subscribed">Subscribed Plans</string>
+    <string name="title_activity_host_plans">Host Plans</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="str_btn_find">Find</string>
+    <string name="hnt_et_location">Enter location</string>
+</resources>

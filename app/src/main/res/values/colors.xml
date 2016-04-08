@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="orange">#FF6600</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#80000000</color>
+    <color name="ColorPrimary">#006DC8</color>
+    <color name="ColorPrimaryDark">#003973</color>
+    <color name="ColorBackground">#7fb6e3</color>
+    <!--
+    <color name="ColorPrimary">#00897B</color>
+    <color name="ColorPrimaryDark">#00695C</color>-->
+    <color name="tabsScrollColor">#7fb6e3</color>
+    <color name="tabsUnselected">#F2F2F2</color>
+</resources>

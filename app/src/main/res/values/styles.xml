@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@color/ColorPrimaryDark</item>
+    </style>
+
+    <style name="TextQ">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/ColorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextA">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+</resources>
